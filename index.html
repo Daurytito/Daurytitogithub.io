@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Gamer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #61dafb;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        #search {
+            margin-bottom: 20px;
+        }
+        .game img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        function searchGames() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const games = document.querySelectorAll('.game');
+            games.forEach(game => {
+                const title = game.querySelector('h3').textContent.toLowerCase();
+                game.style.display = title.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Universo Gamer</h1>    
+    <nav>
+        <a href="#juegos">Juegos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="juegos">
+    <h2>Información de Juegos</h2>
+
+    <div id="search">
+        <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Buscar juegos...">
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2878980/header.jpg?t=1727833577"NBA 2K25">
+        <h3>NBA 2K25</h3>
+        <p>Peso: 90 GB (estimado)</p>
+        <p><a href="https://store.steampowered.com/app/2878980/NBA_2K25/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption II">
+        <h3>Red Dead Redemption II</h3>
+        <p>Peso: 150 GB</p>
+        <p><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1962663/header.jpg" alt="Call of Duty: Warzone">
+        <h3>Call of Duty: Warzone</h3>
+        <p>Peso: 175 GB</p>
+        <p><a href="https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V">
+        <h3>Grand Theft Auto V</h3>
+        <p>Peso: 95 GB</p>
+        <p><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Ver en Steam</
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1719426374"" alt="Counter-Strike 2">
+        <h3>Counter-Strike 2</h3>
+        <p>Peso: 85 GB</p>
+        <p><a href="https://store.steampowered.com/app/730/CounterStrike_2/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2">
+        <h3>Dota 2</h3>
+        <p>Peso: 40 GB</p>
+        <p><a href="https://store.steampowered.com/app/570/Dota_2/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+        <h3>Cyberpunk 2077</h3>
+        <p>Peso: 70 GB</p>
+        <p><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195250/header.jpg?t=1728642268" alt="EA Sports FC 24">
+        <h3>EA Sports FC 24</h3>
+        <p>Peso: 50 GB</p>
+        <p><a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/?l=spanish/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/255710/header.jpg" alt="Cities: Skylines">
+        <h3>Cities: Skylines</h3>
+        <p>Peso: 10 GB</p>
+        <p><a href="https://store.steampowered.com/app/255710/Cities_Skylines/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/949230/header.jpg" alt="Cities: Skylines II">
+        <h3>Cities: Skylines II</h3>
+        <p>Peso: 50 GB</p>
+        <p><a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Juegos adicionales -->
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/header.jpg?t=1721932664" alt="Counter-Strike">
+        <h3>Counter-Strike</h3>
+        <p>Peso: 85 GB</p>
+        <p><a href="https://store.steampowered.com/app/10/CounterStrike/?l=spanish/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher III: Wild Hunt">
+        <h3>The Witcher III: Wild Hunt</h3>
+        <p>Peso: 50 GB</p>
+        <p><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/38410/header.jpg" alt="Fallout 2">
+        <h3>Fallout 2</h3>
+        <p>Peso: 2 GB</p>
+        <p><a href="https://store.steampowered.com/app/38410/Fallout_2/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1030830/header.jpg" alt="Mafia">
+        <h3>Mafia: Definitive Edition</h3>
+        <p>Peso: 40 GB</p>
+        <p><a href="https://store.steampowered.com/app/1030830/Mafia_Definitive_Edition/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1290000/header.jpg" alt="PowerWash Simulator">
+        <h3>PowerWash Simulator</h3>
+        <p>Peso: 6 GB</p>
+        <p><a href="https://store.steampowered.com/app/1290000/PowerWash_Simulator/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190970/header.jpg?t=1726826221" alt="House Flipper 2">
+        <h3>House Flipper 2</h3>
+        <p>Peso: 10 GB</p>
+        <p><a href="https://store.steampowered.com/app/1190970/House_Flipper_2/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/header.jpg?t=1728494275 alt="Diablo IV">
+        <h3>Diablo IV</h3>
+        <p>Peso: 80 GB</p>
+        <p><a href="https://store.steampowered.com/app/2344520/Diablo_IV/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/534380/header.jpg" alt="Dying Light 2">
+        <h3>Dying Light 2</h3>
+        <p>Peso: 60 GB</p>
+        <p><a href="https://store.steampowered.com/app/534380/Dying_Light_2_Stay_Human/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1785650/header.jpg?t=1728540766" alt="TopSpin 2K25">
+        <h3>TopSpin 2K25</h3>
+        <p>Peso: 25 GB</p>
+        <p><a href="https://store.steampowered.com/app/1785650/TopSpin_2K25/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://store-images.s-microsoft.com/image/apps.53518.13510798883386282.a1e5df65-8dd7-427c-9da9-506afa37b254.706886cc-3ee8-42ab-b3d1-2faff7915f6f?q=90&w=177&h=265" alt="Roblox">
+        <h3>Roblox</h3>
+        <p>Peso: 2 GB</p>
+        <p><a href="https://www.xbox.com/en-US/games/store/roblox/9nblgggzm6wm">Ver en Microsoft Xbox</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg" alt="Los Sims 4">
+        <h3>Los Sims 4</h3>
+        <p>Peso: 25 GB</p>
+        <p><a href="https://store.steampowered.com/app/1222670/The_Sims_4/">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962660/header.jpg?t=1710969334" alt="Call of Duty: Modern Warfare II">
+        <h3>Call of Duty: Modern Warfare II</h3>
+        <p>Peso: 125 GB</p>
+        <p><a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/?l=spanish">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2519060/header.jpg?t=1726767415" alt="Call of Duty: Modern Warfare III">
+        <h3>Call of Duty: Modern Warfare III</h3>
+        <p>Peso: 150 GB</p>
+        <p><a href="https://store.steampowered.com/app/2519060/Call_of_Duty_Modern_Warfare_III/"">Ver en Steam</a></p>
+    </div>
+
+    <div class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/League_of_Legends_2019_vector.svg" alt="League of Legends">
+        <h3>League of Legends</h3>
+        <p>Peso: 10 GB</p>
+        <p><a href="https://www.leagueoflegends.com/es-mx/download/">Ver en League of legens</a></p>
+    </div
