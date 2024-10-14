@@ -1,78 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Gamer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #61dafb;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-        }
-        #search {
-            margin-bottom: 20px;
-        }
-        .game img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 15px;
-        }
-    </style>
-    <script>
-        function searchGames() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const games = document.querySelectorAll('.game');
-            games.forEach(game => {
-                const title = game.querySelector('h3').textContent.toLowerCase();
-                game.style.display = title.includes(input) ? '' : 'none';
-            });
-        }
-    </script>
-</head>
-<body>
-
-<header>
-    <h1>Bienvenido a Universo Gamer</h1>    
-    <nav>
-        <a href="#juegos">Juegos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-
 <section id="juegos">
     <h2>Información de Juegos</h2>
 
@@ -80,172 +5,863 @@
         <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Buscar juegos...">
     </div>
 
+    <!-- Civilization V -->
     <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2878980/header.jpg?t=1727833577"NBA 2K25">
-        <h3>NBA 2K25</h3>
-        <p>Peso: 90 GB (estimado)</p>
-        <p><a href="https://store.steampowered.com/app/2878980/NBA_2K25/">Ver en Steam</a></p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/8930/header.jpg" alt="Civilization V">
+        <h3>Civilization V</h3>
+        <p>Peso: 8 GB</p>
+        <p><a href="https://store.steampowered.com/app/8930/Sid_Meiers_Civilization_V/">Ver en Steam</a></p>
+        <p>Un juego de estrategia por turnos donde construyes un imperio y lo llevas a la gloria.</p>
     </div>
 
+    <!-- Diablo III -->
     <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Red Dead Redemption II">
-        <h3>Red Dead Redemption II</h3>
-        <p>Peso: 150 GB</p>
-        <p><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">Ver en Steam</a></p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Diablo_III_cover.png" alt="Diablo III">
+        <h3>Diablo III</h3>
+        <p>Peso: 15 GB</p>
+        <p><a href="https://us.diablo3.blizzard.com/es-mx/8u">Ver en blizzars</a></p>
+        <p>El icónico RPG de acción donde luchas contra hordas demoníacas.</p>
     </div>
 
+    <!-- Garry's Mod -->
     <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1962663/header.jpg" alt="Call of Duty: Warzone">
-        <h3>Call of Duty: Warzone</h3>
-        <p>Peso: 175 GB</p>
-        <p><a href="https://store.steampowered.com/app/1962663/Call_of_Duty_Warzone/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="Grand Theft Auto V">
-        <h3>Grand Theft Auto V</h3>
-        <p>Peso: 95 GB</p>
-        <p><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Ver en Steam</
-    </div>
-
-    <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1719426374"" alt="Counter-Strike 2">
-        <h3>Counter-Strike 2</h3>
-        <p>Peso: 85 GB</p>
-        <p><a href="https://store.steampowered.com/app/730/CounterStrike_2/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2">
-        <h3>Dota 2</h3>
-        <p>Peso: 40 GB</p>
-        <p><a href="https://store.steampowered.com/app/570/Dota_2/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
-        <h3>Cyberpunk 2077</h3>
-        <p>Peso: 70 GB</p>
-        <p><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2195250/header.jpg?t=1728642268" alt="EA Sports FC 24">
-        <h3>EA Sports FC 24</h3>
-        <p>Peso: 50 GB</p>
-        <p><a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/?l=spanish/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/255710/header.jpg" alt="Cities: Skylines">
-        <h3>Cities: Skylines</h3>
-        <p>Peso: 10 GB</p>
-        <p><a href="https://store.steampowered.com/app/255710/Cities_Skylines/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/949230/header.jpg" alt="Cities: Skylines II">
-        <h3>Cities: Skylines II</h3>
-        <p>Peso: 50 GB</p>
-        <p><a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/">Ver en Steam</a></p>
-    </div>
-
-    <!-- Juegos adicionales -->
-
-    <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/header.jpg?t=1721932664" alt="Counter-Strike">
-        <h3>Counter-Strike</h3>
-        <p>Peso: 85 GB</p>
-        <p><a href="https://store.steampowered.com/app/10/CounterStrike/?l=spanish/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher III: Wild Hunt">
-        <h3>The Witcher III: Wild Hunt</h3>
-        <p>Peso: 50 GB</p>
-        <p><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/38410/header.jpg" alt="Fallout 2">
-        <h3>Fallout 2</h3>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/4000/header.jpg" alt="Garry's Mod">
+        <h3>Garry's Mod</h3>
         <p>Peso: 2 GB</p>
-        <p><a href="https://store.steampowered.com/app/38410/Fallout_2/">Ver en Steam</a></p>
+        <p><a href="https://store.steampowered.com/app/4000/Garrys_Mod/">Ver en Steam</a></p>
+        <p>Un sandbox basado en la física donde puedes hacer prácticamente cualquier cosa.</p>
     </div>
 
+    <!-- Euro Truck Simulator 2 -->
     <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1030830/header.jpg" alt="Mafia">
-        <h3>Mafia: Definitive Edition</h3>
-        <p>Peso: 40 GB</p>
-        <p><a href="https://store.steampowered.com/app/1030830/Mafia_Definitive_Edition/">Ver en Steam</a></p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg" alt="Euro Truck Simulator 2">
+        <h3>Euro Truck Simulator 2</h3>
+        <p>Peso: 5 GB</p>
+        <p><a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">Ver en Steam</a></p>
+        <p>Conduce camiones por toda Europa en este simulador detallado.</p>
     </div>
 
+    <!-- RollerCoaster Tycoon 3 -->
     <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1290000/header.jpg" alt="PowerWash Simulator">
-        <h3>PowerWash Simulator</h3>
-        <p>Peso: 6 GB</p>
-        <p><a href="https://store.steampowered.com/app/1290000/PowerWash_Simulator/">Ver en Steam</a></p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2700/header.jpg" alt="RollerCoaster Tycoon 3">
+        <h3>RollerCoaster Tycoon 3</h3>
+        <p>Peso: 600 MB</p>
+        <p><a href="https://store.steampowered.com/app/2700/RollerCoaster_Tycoon_3_Platinum/">Ver en Steam</a></p>
+        <p>Diseña y gestiona tu propio parque de atracciones.</p>
     </div>
 
+    <!-- Fall Guys -->
     <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190970/header.jpg?t=1726826221" alt="House Flipper 2">
-        <h3>House Flipper 2</h3>
-        <p>Peso: 10 GB</p>
-        <p><a href="https://store.steampowered.com/app/1190970/House_Flipper_2/">Ver en Steam</a></p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/header.jpg" alt="Fall Guys">
+        <h3>Fall Guys</h3>
+        <p>Peso: 4 GB</p>
+        <p><a href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/">Ver en Steam</a></p>
+        <p>Participa en divertidas carreras de obstáculos multijugador.</p>
     </div>
 
+    <!-- Dark Souls III -->
     <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2344520/header.jpg?t=1728494275 alt="Diablo IV">
-        <h3>Diablo IV</h3>
-        <p>Peso: 80 GB</p>
-        <p><a href="https://store.steampowered.com/app/2344520/Diablo_IV/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/534380/header.jpg" alt="Dying Light 2">
-        <h3>Dying Light 2</h3>
-        <p>Peso: 60 GB</p>
-        <p><a href="https://store.steampowered.com/app/534380/Dying_Light_2_Stay_Human/">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1785650/header.jpg?t=1728540766" alt="TopSpin 2K25">
-        <h3>TopSpin 2K25</h3>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg" alt="Dark Souls III">
+        <h3>Dark Souls III</h3>
         <p>Peso: 25 GB</p>
-        <p><a href="https://store.steampowered.com/app/1785650/TopSpin_2K25/">Ver en Steam</a></p>
+        <p><a href="https://store.steampowered.com/app/374320/DARK_SOULS_III/">Ver en Steam</a></p>
+        <p>Una oscura aventura de acción y combate brutal.</p>
     </div>
 
+    <!-- Dark Souls -->
     <div class="game">
-        <img src="https://store-images.s-microsoft.com/image/apps.53518.13510798883386282.a1e5df65-8dd7-427c-9da9-506afa37b254.706886cc-3ee8-42ab-b3d1-2faff7915f6f?q=90&w=177&h=265" alt="Roblox">
-        <h3>Roblox</h3>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/211420/header.jpg" alt="Dark Souls">
+        <h3>Dark Souls</h3>
+        <p>Peso: 8 GB</p>
+        <p><a href="https://store.steampowered.com/app/211420/DARK_SOULS_Prepare_to_Die_Edition/">Ver en Steam</a></p>
+        <p>El juego que inició el fenómeno Souls, famoso por su dificultad.</p>
+    </div>
+
+    <!-- Diablo II -->
+    <div class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png" alt="Diablo II">
+        <h3>Diablo II</h3>
         <p>Peso: 2 GB</p>
-        <p><a href="https://www.xbox.com/en-US/games/store/roblox/9nblgggzm6wm">Ver en Microsoft Xbox</a></p>
+        <p><a href="https://us.shop.battle.net/es-es/product/diablo_ii_resurrected"">Ver en Battle net</a></p>
+        <p>El clásico RPG de acción vuelve en esta versión remasterizada.</p>
     </div>
 
+    <!-- The Forest -->
     <div class="game">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg" alt="Los Sims 4">
-        <h3>Los Sims 4</h3>
-        <p>Peso: 25 GB</p>
-        <p><a href="https://store.steampowered.com/app/1222670/The_Sims_4/">Ver en Steam</a></p>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/242760/header.jpg" alt="The Forest">
+        <h3>The Forest</h3>
+        <p>Peso: 5 GB</p>
+        <p><a href="https://store.steampowered.com/app/242760/The_Forest/">Ver en Steam</a></p>
+        <p>Un survival horror en un bosque lleno de misterios y peligros.</p>
     </div>
 
+    <!-- Los Sims 3 -->
     <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962660/header.jpg?t=1710969334" alt="Call of Duty: Modern Warfare II">
-        <h3>Call of Duty: Modern Warfare II</h3>
-        <p>Peso: 125 GB</p>
-        <p><a href="https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/?l=spanish">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2519060/header.jpg?t=1726767415" alt="Call of Duty: Modern Warfare III">
-        <h3>Call of Duty: Modern Warfare III</h3>
-        <p>Peso: 150 GB</p>
-        <p><a href="https://store.steampowered.com/app/2519060/Call_of_Duty_Modern_Warfare_III/"">Ver en Steam</a></p>
-    </div>
-
-    <div class="game">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/League_of_Legends_2019_vector.svg" alt="League of Legends">
-        <h3>League of Legends</h3>
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/47890/header.jpg" alt="Los Sims 3">
+        <h3>Los Sims 3</h3>
         <p>Peso: 10 GB</p>
-        <p><a href="https://www.leagueoflegends.com/es-mx/download/">Ver en League of legens</a></p>
-    </div
+        <p><a href="https://store.steampowered.com/app/47890/The_Sims_3/">Ver en Steam</a></p>
+        <p>Controla la vida de tus sims en este simulador de vida.</p>
+    </div>
+
+    <!-- Life Is Strange -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/319630/header.jpg" alt="Life Is Strange">
+        <h3>Life Is Strange</h3>
+        <p>Peso: 5 GB</p>
+        <p><a href="https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/">Ver en Steam</a></p>
+        <p>Una aventura narrativa que gira en torno a decisiones y consecuencias.</p>
+    </div>
+
+    <!-- Age of Empires -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg" alt="Age of Empires">
+        <h3>Age of Empires</h3>
+        <p>Peso: 30 GB</p>
+        <p><a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/">Ver en Steam</a></p>
+        <p>Uno de los RTS más populares y queridos de todos los tiempos.</p>
+    </div>
+
+    <!-- Doom 3 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/9050/header.jpg" alt="Doom 3">
+        <h3>Doom 3</h3>
+        <p>Peso: 3 GB</p>
+        <p><a href="https://store.steampowered.com/app/9050/DOOM_3/">Ver en Steam</a></p>
+        <p>Una experiencia de terror y acción en primera persona.</p>
+    </div>
+</section>
+
+    <!-- Assassin's Creed Valhalla -->
+    <div class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg"" alt="Assassin's Creed Valhalla">
+        <h3>Assassin's Creed Valhalla</h3>
+        <p><a href="https://store.ubi.com/us/assassins-creed-valhalla">Ver en Ubisoft Store</a></p>
+        <p>Explora la era vikinga en esta entrega épica de Assassin's Creed.</p>
+    </div>
+
+    <!-- Forza Horizon 5 -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg" alt="Forza Horizon 5">
+        <h3>Forza Horizon 5</h3>
+        <p><a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/">Ver en Steam</a></p>
+        <p>Explora las carreteras de México en esta emocionante aventura de carreras.</p>
+    </div>
+
+    <!-- FIFA 22 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1506830/header.jpg" alt="FIFA 22">
+        <h3>FIFA 22</h3>
+        <p><a href="https://store.steampowered.com/app/1506830/FIFA_22/">Ver en Steam</a></p>
+        <p>Disfruta de la experiencia de fútbol más realista hasta la fecha con FIFA 22.</p>
+    </div>
+
+    <!-- Overwatch 2 Legendary edition -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/header.jpg?t=1727296520" alt="Overwatch Legendary Edition">
+        <h3>Overwatch Legendary Edition</h3>
+        <p><a href="https://store.steampowered.com/app/2357570/Overwatch_2/">Ver en Steam</a></p>
+        <p>La experiencia definitiva del hero shooter multijugador.</p>
+    </div>
+
+    <!-- Resident Evil 7 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/418370/header.jpg" alt="Resident Evil 7">
+        <h3>Resident Evil 7</h3>
+        <p><a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/">Ver en Steam</a></p>
+        <p>Una vuelta al survival horror en esta escalofriante entrega de Resident Evil.</p>
+    </div>
+
+    <!-- Alan Wake 2 -->
+    <div class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Alan_Wake_2_box_art.jpg" alt="Alan Wake 2">
+        <h3>Alan Wake 2</h3>
+        <p><a href="https://store.epicgames.com/es-ES/p/alan-wake-2">Ver en Epic Games</a></p>
+        <p>El regreso del famoso escritor en una nueva historia de suspenso y horror.</p>
+    </div>
+
+    <!-- Assassin's Creed Valhalla Mirage -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3035570/header.jpg?t=1728655546" alt="Assassin's Creed Valhalla Mirage">
+        <h3>Assassin's Creed Valhalla: Mirage</h3>
+        <p><a href="https://store.steampowered.com/app/3035570/Assassins_Creed_Mirage/"">Ver en Steam</a></p>
+        <p>Explora la historia de Bagdad en la nueva entrega de la saga.</p>
+    </div>
+
+    <!-- Far Cry 6 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2369390/header.jpg?t=1706823201" alt="Far Cry 6">
+        <h3>Far Cry 6</h3>
+        <p><a href="https://store.steampowered.com/app/2369390/Far_Cry_6/">Ver en Steam</a></p>
+        <p>Únete a la revolución y libera a Yara de un dictador opresor.</p>
+    </div>
+
+    <!-- Far Cry 5 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg" alt="Far Cry 5">
+        <h3>Far Cry 5</h3>
+        <p><a href="https://store.steampowered.com/app/552520/Far_Cry_5/">Ver en Steam</a></p>
+        <p>Explora el condado de Hope y lucha contra una secta en esta entrega.</p>
+    </div>
+
+    <!-- Far Cry 4 -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/298110/header.jpg" alt="Far Cry 4">
+        <h3>Far Cry 4</h3>
+        <p><a href="https://store.steampowered.com/app/298110/Far_Cry_4/">Ver en Steam</a></p>
+        <p>Sumérgete en los paisajes y peligros de Kyrat en esta emocionante aventura.</p>
+    </div>
+
+    <!-- Far Cry 3 -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/220240/header.jpg" alt="Far Cry 3">
+        <h3>Far Cry 3</h3>
+        <p><a href="https://store.steampowered.com/app/220240/Far_Cry_3/">Ver en Steam</a></p>
+        <p>Una de las entregas más icónicas de la serie, situada en una isla misteriosa.</p>
+    </div>
+
+    <!-- Assassin's Creed II -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/33230/header.jpg" alt="Assassin's Creed II">
+        <h3>Assassin's Creed II</h3>
+        <p><a href="https://store.steampowered.com/app/33230/Assassins_Creed_II/">Ver en Steam</a></p>
+        <p>Únete a Ezio Auditore en su misión por la venganza en la Italia renacentista.</p>
+    </div>
+
+    <!-- Watch Dogs -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/243470/header.jpg" alt="Watch Dogs">
+        <h3>Watch Dogs</h3>
+        <p><a href="https://store.steampowered.com/app/243470/Watch_Dogs/">Ver en Steam</a></p>
+        <p>Controla y hackea una ciudad entera en este thriller tecnológico.</p>
+    </div>
+
+    <!-- Watch Dogs 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/447040/header.jpg" alt="Watch Dogs 2">
+        <h3>Watch Dogs 2</h3>
+        <p><a href="https://store.steampowered.com/app/447040/Watch_Dogs_2/">Ver en Steam</a></p>
+        <p>Hackea y explora el mundo abierto de San Francisco como Marcus Holloway.</p>
+    </div>
+
+    <!-- Avatar: Frontiers of Pandora -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2840770/header.jpg?t=1720787156" alt="Avatar: Frontiers of Pandora">
+        <h3>Avatar: Frontiers of Pandora</h3>
+        <p><a href="https://store.steampowered.com/app/2840770/Avatar_Frontiers_of_Pandora/">Ver en Steam</a></p>
+        <p>Explora el vasto y mágico mundo de Pandora en esta épica aventura.</p>
+    </div>
+
+    <!-- Star Wars Outlaws -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2842040/header.jpg?t=1728574027" alt="Star Wars Outlaws">
+        <h3>Star Wars Outlaws</h3>
+        <p><a href="https://store.steampowered.com/app/2842040/Star_Wars_Outlaws/">Ver en Steam</a></p>
+        <p>Embárcate en una aventura galáctica sin precedentes en el universo de Star Wars.</p>
+    </div>
+
+    <!-- SnowRunner -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1465360/header.jpg" alt="SnowRunner">
+        <h3>SnowRunner</h3>
+        <p><a href="https://store.steampowered.com/app/1465360/SnowRunner/">Ver en Steam</a></p>
+        <p>Conduce poderosos vehículos todo terreno a través de entornos extremos.</p>
+    </div>
+
+    <!-- PC Building Simulator 2 -->
+    <div class="game">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/58/PC_Building_Simulator_2_cover_art.jpg" alt="PC Building Simulator 2">
+        <h3>PC Building Simulator 2</h3>
+        <p><a href="https://store.epicgames.com/en-US/p/pc-building-simulator-2">Ver en Epic Games Store</a></p>
+        <p>Construye y gestiona tu propio negocio de reparación de PC.</p>
+    </div>
+
+    <!-- Farming Simulator 22 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1248130/header.jpg" alt="Farming Simulator 22">
+        <h3>Farming Simulator 22</h3>
+        <p><a href="https://store.steampowered.com/app/1248130/Farming_Simulator_22/">Ver en Steam</a></p>
+        <p>Vive la experiencia agrícola más realista con Farming Simulator 22.</p>
+    </div>
+
+    <!-- F1 24 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2488620/header.jpg?t=1728642634" alt="F1 24">
+        <h3>F1 24</h3>
+        <p><a href="https://store.steampowered.com/app/2488620/F1_24/">Ver en Steam</a></p>
+        <p>Disfruta de la emoción y la velocidad de la Fórmula 1 en F1 24.</p>
+    </div>
+
+    <!-- Madden NFL 25 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2582560/header.jpg?t=1728642669" alt="Madden NFL 25">
+        <h3>Madden NFL 25</h3>
+        <p><a href="https://store.steampowered.com/app/2582560/EA_SPORTS_Madden_NFL_25/">Ver en Steam</a></p>
+        <p>Vive la acción de la NFL con Madden NFL 25.</p>
+    </div>
+
+    <!-- Madden NFL 24 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2140330/header.jpg?t=1728642217" alt="Madden NFL 24">
+        <h3>Madden NFL 24</h3>
+        <p><a href="https://store.steampowered.com/app/2140330/Madden_NFL_24/">Ver en Steam</a></p>
+        <p>Lo mejor del fútbol americano en tu pantalla con Madden NFL 24.</p>
+    </div>
+
+    <!-- Ghost Recon Wildlands -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/460930/header.jpg" alt="Ghost Recon Wildlands">
+        <h3>Ghost Recon Wildlands</h3>
+        <p><a href="https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/">Ver en Steam</a></p>
+        <p>Únete a un escuadrón de élite para desmantelar un cartel en Bolivia.</p>
+    </div>
+
+    <!-- Assassin's Creed III -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/208480/header.jpg" alt="Assassin's Creed III">
+        <h3>Assassin's Creed III</h3>
+        <p><a href="https://store.steampowered.com/app/208480/Assassins_Creed_III/">Ver en Steam</a></p>
+        <p>Revive la Revolución Americana en esta épica entrega de la serie.</p>
+    </div>
+
+    <!-- Among Us -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg" alt="Among Us">
+        <h3>Among Us</h3>
+        <p><a href="https://store.steampowered.com/app/945360/Among_Us/">Ver en Steam</a></p>
+        <p>Un juego multijugador de deducción social con impostores en tu nave.</p>
+    </div>
+
+    <!-- BeamNG.drive -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/284160/header.jpg" alt="BeamNG.drive">
+        <h3>BeamNG.drive</h3>
+        <p><a href="https://store.steampowered.com/app/284160/BeamNGdrive/">Ver en Steam</a></p>
+        <p>Un simulador de conducción con físicas realistas y vehículos destructibles.</p>
+    </div>
+
+    <!-- Borderlands 3 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg" alt="Borderlands 3">
+        <h3>Borderlands 3</h3>
+        <p><a href="https://store.steampowered.com/app/397540/Borderlands_3/">Ver en Steam</a></p>
+        <p>Acción, caos y toneladas de armas te esperan en este shooter looter.</p>
+    </div>
+
+    <!-- ARK: Survival Evolved -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg" alt="ARK: Survival Evolved">
+        <h3>ARK: Survival Evolved</h3>
+        <p><a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">Ver en Steam</a></p>
+        <p>Sobrevive en un mundo primitivo lleno de dinosaurios y criaturas fantásticas.</p>
+    </div>
+
+</section>
+
+    <!-- Assassin's Creed Syndicate -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/368500/header.jpg" alt="Assassin's Creed Syndicate">
+        <h3>Assassin's Creed Syndicate</h3>
+        <p><a href="https://store.steampowered.com/app/368500/Assassins_Creed_Syndicate/">Ver en Steam</a></p>
+        <p>Vive la Revolución Industrial en Londres con los gemelos Frye.</p>
+    </div>
+
+    <!-- Hitman World of Assassination -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/header.jpg" alt="Hitman World of Assassination">
+        <h3>Hitman World of Assassination</h3>
+        <p><a href="https://store.steampowered.com/app/1659040/HITMAN_World_of_Assassination/">Ver en Steam</a></p>
+        <p>Conviértete en el Agente 47 en esta experiencia de sigilo definitiva.</p>
+    </div>
+
+    <!-- Watch Dogs Legion -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2239550/header.jpg?t=1716280027" alt="Watch Dogs Legion">
+        <h3>Watch Dogs Legion</h3>
+        <p><a href="https://store.steampowered.com/app/2239550/Watch_Dogs_Legion/">Ver en Steam</a></p>
+        <p>Recluta una resistencia y lucha contra el sistema en un Londres distópico.</p>
+    </div>
+
+    <!-- The Last of Us Part 1 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/header.jpg" alt="The Last of Us Part 1">
+        <h3>The Last of Us Part 1</h3>
+        <p><a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/">Ver en Steam</a></p>
+        <p>Vive la emotiva historia de Joel y Ellie en un mundo postapocalíptico.</p>
+    </div>
+
+    <!-- Far Cry New Dawn -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/939960/header.jpg" alt="Far Cry New Dawn">
+        <h3>Far Cry New Dawn</h3>
+        <p><a href="https://store.steampowered.com/app/939960/Far_Cry_New_Dawn/">Ver en Steam</a></p>
+        <p>Explora un mundo postapocalíptico lleno de peligro y aventura.</p>
+    </div>
+
+    <!-- Far Cry Primal -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/371660/header.jpg" alt="Far Cry Primal">
+        <h3>Far Cry Primal</h3>
+        <p><a href="https://store.steampowered.com/app/371660/Far_Cry_Primal/">Ver en Steam</a></p>
+        <p>Sobrevive a la Edad de Piedra en este mundo abierto prehistórico.</p>
+    </div>
+
+    <!-- Skull and Bones -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2853730/header.jpg?t=1728394422" alt="Skull and Bones">
+        <h3>Skull and Bones</h3>
+        <p><a href="https://store.steampowered.com/app/2853730/Skull_and_Bones/">Ver en Steam</a></p>
+        <p>Conviértete en un pirata y surca los mares en busca de gloria y tesoros.</p>
+    </div>
+
+    <!-- The Division 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2221490/header.jpg" alt="The Division 2">
+        <h3>The Division 2</h3>
+        <p><a href="https://store.steampowered.com/app/2221490/Tom_Clancys_The_Division_2/">Ver en Steam</a></p>
+        <p>Lucha por la supervivencia de la humanidad en las ruinas de Washington D.C.</p>
+    </div>
+
+    <!-- Frostpunk 2 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1601580/header.jpg?t=1728289067" alt="Frostpunk 2">
+        <h3>Frostpunk 2</h3>
+        <p><a href="https://store.steampowered.com/app/1601580/Frostpunk_2/">Ver en Steam</a></p>
+        <p>Gestiona una sociedad en un mundo helado en esta secuela épica.</p>
+    </div>
+
+    <!-- Spider-Man Remastered -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/header.jpg" alt="Spider-Man Remastered">
+        <h3>Spider-Man Remastered</h3>
+        <p><a href="https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/">Ver en Steam</a></p>
+        <p>Vive la experiencia definitiva del superhéroe Spider-Man en su versión remasterizada.</p>
+    </div>
+
+    <!-- Dead Island 2 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/934700/header.jpg?t=1726585751" alt="Dead Island 2">
+        <h3>Dead Island 2</h3>
+        <p><a href="https://store.steampowered.com/app/934700/Dead_Island_2">Ver en Steam</a></p>
+        <p>Sobrevive a una infestación zombie en un paraíso tropical.</p>
+    </div>
+
+    <!-- Mortal Kombat 1 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/header.jpg" alt="Mortal Kombat 1">
+        <h3>Mortal Kombat 1</h3>
+        <p><a href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/">Ver en Steam</a></p>
+        <p>El clásico juego de lucha regresa con nuevas mecánicas y gráficos impresionantes.</p>
+    </div>
+
+    <!-- Detroit: Become Human -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg" alt="Detroit: Become Human">
+        <h3>Detroit: Become Human</h3>
+        <p><a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/">Ver en Steam</a></p>
+        <p>Explora un futuro donde los androides buscan la libertad en este thriller interactivo.</p>
+    </div>
+
+    <!-- Goat Simulator 3 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/850190/header.jpg?t=1725182307" alt="Goat Simulator 3">
+        <h3>Goat Simulator 3</h3>
+        <p><a href="https://store.steampowered.com/app/850190/Goat_Simulator_3/">Ver en Steam</a></p>
+        <p>Regresa el caos caprino en esta hilarante secuela del simulador de cabra.</p>
+    </div>
+
+    <!-- Spider-Man Miles Morales -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817190/header.jpg?t=1725991497" alt="Spider-Man Miles Morales">
+        <h3>Spider-Man Miles Morales</h3>
+        <p><a href="https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/">Ver en Steam</a></p>
+        <p>Acompaña a Miles Morales en su aventura para convertirse en un héroe.</p>
+    </div>
+
+
+    <!-- Call of Duty: WWII -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/476600/header.jpg" alt="Call of Duty WWII">
+        <h3>Call of Duty: WWII</h3>
+        <p><a href="https://store.steampowered.com/app/476600/Call_of_Duty_WWII/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: Infinite Warfare -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292730/header.jpg" alt="Call of Duty Infinite Warfare">
+        <h3>Call of Duty: Infinite Warfare</h3>
+        <p><a href="https://store.steampowered.com/app/292730/Call_of_Duty_Infinite_Warfare/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: Advanced Warfare -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/209650/header.jpg" alt="Call of Duty Advanced Warfare">
+        <h3>Call of Duty: Advanced Warfare</h3>
+        <p><a href="https://store.steampowered.com/app/209650/Call_of_Duty_Advanced_Warfare/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: Ghosts -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/209160/header.jpg" alt="Call of Duty Ghosts">
+        <h3>Call of Duty: Ghosts</h3>
+        <p><a href="https://store.steampowered.com/app/209160/Call_of_Duty_Ghosts/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Minecraft -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/header.jpg?t=1717003107" alt="Minecraft">
+        <h3>Minecraft</h3>
+        <p><a href="https://store.steampowered.com/app/1672970/Minecraft_Dungeons/">Ver en Steam</a></p>
+    </div> 
+
+<section id="juegos-recomendados">
+    <h2>Juegos Recomendados</h2>
+
+    <!-- God of War -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War">
+        <h3>God of War</h3>
+        <p><a href="https://store.steampowered.com/app/1593500/God_of_War/">Ver en Steam</a></p>
+        <p>Únete a Kratos y Atreus en una épica aventura por la mitología nórdica.</p>
+    </div>
+
+    <!-- Assassin's Creed Rogue -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/311560/header.jpg" alt="Assassin's Creed Rogue">
+        <h3>Assassin's Creed Rogue</h3>
+        <p><a href="https://store.steampowered.com/app/311560/Assassins_Creed_Rogue/">Ver en Steam</a></p>
+        <p>Conviértete en un templario y enfréntate a los Assassins en esta oscura entrega.</p>
+    </div>
+
+    <!-- The Division -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/365590/header.jpg" alt="The Division">
+        <h3>The Division</h3>
+        <p><a href="https://store.steampowered.com/app/365590/Tom_Clancys_The_Division/">Ver en Steam</a></p>
+        <p>Enfréntate a la anarquía en Nueva York tras un brote pandémico.</p>
+    </div>
+
+    <!-- The Crew Motorfest -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2698940/header.jpg?t=1721340054" alt="The Crew Motorfest">
+        <h3>The Crew Motorfest</h3>
+        <p><a href="https://store.steampowered.com/app/2698940/The_Crew_Motorfest/">Ver en Steam</a></p>
+        <p>Compite en un festival de carreras en un mundo abierto inspirado en Hawái.</p>
+    </div>
+
+    <!-- The Crew 2 -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/646910/header.jpg" alt="The Crew 2">
+        <h3>The Crew 2</h3>
+        <p><a href="https://store.steampowered.com/app/646910/The_Crew_2/">Ver en Steam</a></p>
+        <p>Domina las tierras, los cielos y los mares en este inmenso mundo abierto.</p>
+    </div>
+
+    <!-- FC 25 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/header.jpg?t=1728642725" alt="FC 25">
+        <h3>FC 25</h3>
+        <p><a href="https://store.steampowered.com/app/2669320/EA_SPORTS_FC_25/">Ver en Steam</a></p>
+        <p>Vive la nueva experiencia de fútbol en la más reciente edición de FC.</p>
+    </div>
+
+    <!-- Call of Duty: Black Ops 6 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2933620/header.jpg?t=1725896510" alt="Call of Duty: Black Ops 6">
+        <h3>Call of Duty: Black Ops 6</h3>
+        <p><a href="https://store.steampowered.com/app/2933620/Call_of_Duty_Black_Ops_6/">Ver en Steam</a></p>
+        <p>Experimenta el combate táctico y las operaciones encubiertas en Black Ops 6.</p>
+    </div>
+
+    <!-- Call of Duty: Black Ops I -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/42700/header.jpg" alt="Call of Duty: Black Ops I">
+        <h3>Call of Duty: Black Ops I</h3>
+        <p><a href="https://store.steampowered.com/app/42700/Call_of_Duty_Black_Ops/">Ver en Steam</a></p>
+        <p>Vuelve a las raíces de Black Ops con esta icónica entrega.</p>
+    </div>
+
+    <!-- Call of Duty: Black Ops II -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/202970/header.jpg" alt="Call of Duty: Black Ops II">
+        <h3>Call of Duty: Black Ops II</h3>
+        <p><a href="https://store.steampowered.com/app/202970/Call_of_Duty_Black_Ops_II/">Ver en Steam</a></p>
+        <p>Entra en el futuro y experimenta la guerra avanzada en Black Ops II.</p>
+    </div>
+
+    <!-- Call of Duty: Black Ops III -->
+    <div class="game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/311210/header.jpg" alt="Call of Duty: Black Ops III">
+        <h3>Call of Duty: Black Ops III</h3>
+        <p><a href="https://store.steampowered.com/app/311210/Call_of_Duty_Black_Ops_III/">Ver en Steam</a></p>
+        <p>Adéntrate en las sombras y participa en misiones de guerra cibernética.</p>
+    </div>
+
+    <!-- Call of Duty: Vanguard -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1985820/header.jpg?t=1678294767" alt="Call of Duty: Vanguard">
+        <h3>Call of Duty: Vanguard</h3>
+        <p><a href="https://store.steampowered.com/app/1985820/Call_of_Duty_Vanguard/">Ver en Steam</a></p>
+        <p>Únete a las fuerzas especiales y cambia el rumbo de la Segunda Guerra Mundial.</p>
+    </div>
+
+    <!-- Call of Duty: Black Ops Cold War -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1985810/header.jpg?t=1686345977" alt="Call of Duty: Black Ops Cold War">
+        <h3>Call of Duty: Black Ops Cold War</h3>
+        <p><a href="https://store.steampowered.com/app/1985810/Call_of_Duty_Black_Ops_Cold_War/">Ver en Steam</a></p>
+        <p>Vive los momentos más oscuros de la Guerra Fría con esta entrega de Black Ops.</p>
+    </div>
+
+    <!-- Call of Duty: Modern Warfare -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2000950/header.jpg?t=1678294805" alt="Call of Duty: Modern Warfare">
+        <h3>Call of Duty: Modern Warfare</h3>
+        <p><a href="https://store.steampowered.com/app/2000950/Call_of_Duty_Modern_Warfare/">Ver en Steam</a></p>
+        <p>Sumérgete en el combate táctico moderno con Modern Warfare.</p>
+    </div>
+
+</section>
+
+<section id="juegos-recomendados">
+    <h2>Juegos de Call of Duty</h2>
+
+    <!-- Call of Duty -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2620/header.jpg" alt="Call of Duty">
+        <h3>Call of Duty</h3>
+        <p><a href="https://store.steampowered.com/app/2620/Call_of_Duty/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2630/header.jpg" alt="Call of Duty 2">
+        <h3>Call of Duty 2</h3>
+        <p><a href="https://store.steampowered.com/app/2630/Call_of_Duty_2/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: World at War -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/10090/header.jpg" alt="Call of Duty World at War">
+        <h3>Call of Duty: World at War</h3>
+        <p><a href="https://store.steampowered.com/app/10090/Call_of_Duty_World_at_War/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty Warchest -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/subs/222/header_586x192.jpg?t=1654829979" alt="Call of Duty Warchest">
+        <h3>Call of Duty: Warchest</h3>
+        <p><a href="https://store.steampowered.com/sub/222/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: Modern Warfare III (2011) -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/42690/header.jpg" alt="Call of Duty Modern Warfare III (2011)">
+        <h3>Call of Duty: Modern Warfare III (2011)</h3>
+        <p><a href="https://store.steampowered.com/app/42690/Call_of_Duty_Modern_Warfare_3/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty: Modern Warfare II (2009) -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/10180/header.jpg" alt="Call of Duty Modern Warfare II (2009)">
+        <h3>Call of Duty: Modern Warfare II (2009)</h3>
+        <p><a href="https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Call of Duty 4: Modern Warfare (2007) -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/7940/header.jpg" alt="Call of Duty 4 Modern Warfare (2007)">
+        <h3>Call of Duty 4: Modern Warfare (2007)</h3>
+        <p><a href="https://store.steampowered.com/app/7940/Call_of_Duty_4_Modern_Warfare/">Ver en Steam</a></p>
+    </div>
+
+</section>
+
+<section id="juegos-recomendados">
+    <h2>Juegos Recomendados</h2>
+
+    <!-- Dragón Ball Sparking Zero -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/header.jpg?t=1728664196"" alt="Dragón Ball Sparking Zero">
+        <h3>Dragón Ball Sparking Zero</h3>
+        <p><a href="https://store.steampowered.com/app/1790600/DRAGON_BALL_Sparking_ZERO/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Destiny 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header.jpg" alt="Destiny 2">
+        <h3>Destiny 2</h3>
+        <p><a href="https://store.steampowered.com/app/1085660/Destiny_2/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Once Human -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2139460/header.jpg?t=1728359060" alt="Once Human">
+        <h3>Once Human</h3>
+        <p><a href="https://store.steampowered.com/app/2139460/Once_Human">Ver en Steam</a></p>
+    </div>
+
+    <!-- Dead by Daylight -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg" alt="Dead by Daylight">
+        <h3>Dead by Daylight</h3>
+        <p><a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Elden Ring -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring">
+        <h3>Elden Ring</h3>
+        <p><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Grand Theft Auto IV -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/12210/header.jpg" alt="Grand Theft Auto IV">
+        <h3>Grand Theft Auto IV</h3>
+        <p><a href="https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_Complete_Edition/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Fallout 76 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1151340/header.jpg" alt="Fallout 76">
+        <h3>Fallout 76</h3>
+        <p><a href="https://store.steampowered.com/app/1151340/Fallout_76/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Microsoft Flight Simulator 24 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1250410/header.jpg" alt="Microsoft Flight Simulator">
+        <h3>Microsoft Flight Simulator</h3>
+        <p><a href="https://store.steampowered.com/app/1250410/Microsoft_Flight_Simulator/">Ver en Steam</a></p>
+    </div>
+
+    <!-- World of Warships -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552990/header.jpg?t=1728552213" alt="World of Warships">
+        <h3>World of Warships</h3>
+        <p><a href="https://store.steampowered.com/app/552990/World_of_Warships/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Portal 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg" alt="Portal 2">
+        <h3>Portal 2</h3>
+        <p><a href="https://store.steampowered.com/app/620/Portal_2/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Resident Evil 4 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/254700/header.jpg" alt="Resident Evil 4">
+        <h3>Resident Evil 4</h3>
+        <p><a href="https://store.steampowered.com/app/254700/Resident_Evil_4/">Ver en Steam</a></p>
+    </div>
+
+    <!-- World of Tanks -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1407200/header.jpg" alt="World of Tanks">
+        <h3>World of Tanks</h3>
+        <p><a href="https://store.steampowered.com/app/1407200/World_of_Tanks/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Street Fighter 6 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1364780/header.jpg" alt="Street Fighter 6">
+        <h3>Street Fighter 6</h3>
+        <p><a href="https://store.steampowered.com/app/1364780/Street_Fighter_6/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Portal -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/400/header.jpg" alt="Portal">
+        <h3>Portal</h3>
+        <p><a href="https://store.steampowered.com/app/400/Portal/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Left 4 Dead 2 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg" alt="Left 4 Dead 2">
+        <h3>Left 4 Dead 2</h3>
+        <p><a href="https://store.steampowered.com/app/550/Left_4_Dead_2/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Planet Zoo -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/703080/header.jpg" alt="Planet Zoo">
+        <h3>Planet Zoo</h3>
+        <p><a href="https://store.steampowered.com/app/703080/Planet_Zoo/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Battlefield 2042 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1517290/header.jpg" alt="Battlefield 2042">
+        <h3>Battlefield 2042</h3>
+        <p><a href="https://store.steampowered.com/app/1517290/Battlefield_2042/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Halo Infinite -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1240440/header.jpg" alt="Halo Infinite">
+        <h3>Halo Infinite</h3>
+        <p><a href="https://store.steampowered.com/app/1240440/Halo_Infinite/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Battlefield 1 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1238840/header.jpg" alt="Battlefield 1">
+        <h3>Battlefield 1</h3>
+        <p><a href="https://store.steampowered.com/app/1238840/Battlefield_1_Revolution/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Contraband Police -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/756800/header.jpg" alt="Contraband Police">
+        <h3>Contraband Police</h3>
+        <p><a href="https://store.steampowered.com/app/756800/Contraband_Police/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Forza Horizon 4 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1293830/header.jpg" alt="Forza Horizon 4">
+        <h3>Forza Horizon 4</h3>
+        <p><a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Payday 3 -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1272080/header.jpg" alt="Payday 3">
+        <h3>Payday 3</h3>
+        <p><a href="https://store.steampowered.com/app/1272080/PAYDAY_3/">Ver en Steam</a></p>
+        
+        <section id="juegos-recomendados">
+    <h2>Juegos Recomendados</h2>
+
+    <!-- Battlefield V -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg" alt="Battlefield V">
+        <h3>Battlefield V</h3>
+        <p><a href="https://store.steampowered.com/app/1238810/Battlefield_V/">Ver en Steam</a></p>
+    </div>
+
+    <!-- Forza Motorsport -->
+    <div class="game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2440510/header.jpg" alt="Forza Motorsport">
+        <h3>Forza Motorsport</h3>
+        <p><a href="https://store.steampowered.com/app/2440510/Forza_Motorsport/">Ver en Steam</a></p>
+    </div>
+
+    <!-- F1 Manager 2024 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2591280/header.jpg?t=1726647500" alt="F1 Manager 2024">
+        <h3>F1 Manager 2024</h3>
+        <p><a href="https://store.steampowered.com/app/2591280/F1_Manager_2024/">Ver en Steam</a></p>
+    </div>
+</section>
+
+    <!-- Microsoft Flight Simulator 2024 -->
+    <div class="game">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2537590/header.jpg?t=1727994257" alt="Microsoft Flight Simulator 2024">
+        <h3>Microsoft Flight Simulator 2024</h3>
+        <p><a href="https://store.steampowered.com/app/2537590/Microsoft_Flight_Simulator_2024/">Ver en Steam</a></p>
+    </div>
+</section>
